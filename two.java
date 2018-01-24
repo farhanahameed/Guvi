@@ -6,13 +6,16 @@ class two
         Scanner in=new Scanner(System.in);
         String s=in.next();
         String str=in.next();
-        if(s.length()==str.length())
+        if(s.length()>0 && s.length()<100000 || str.length()>0 || str.length()<100000)
         {
-            System.out.println("isomorphic");
-        }
-        else
-        {
-            System.out.println("not isomorphic");
+            if(s.length()==str.length())
+            {
+                System.out.println("isomorphic");
+            }
+            else
+            {
+                System.out.println("not isomorphic");
+            }
         }
     }
 }
